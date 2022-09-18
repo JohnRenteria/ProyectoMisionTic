@@ -1,0 +1,120 @@
+@font-face {
+    font-family: letras;
+    src: url(../fonts/Sriracha-Regular.ttf);
+}
+
+
+.contheader {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(50deg, rgba(2, 0, 36, 1) 18%, rgba(16, 224, 111, 0.3329503676470589) 44%, rgba(7, 53, 150, 1) 77%, rgba(0, 212, 255, 1) 100%);
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.titulologo {
+    background-color:0;
+    display: flex;
+    width: 30%;
+    height: 80px;
+    margin-left: auto;       
+    align-items: center;
+    float: right;
+}
+
+.titulo {
+    margin-left: 25px;
+    font-size: 20px;
+    color: aliceblue;
+    font-weight: bold;
+    align-items: center;
+    font-family: letras;
+}
+
+.logoempresa{
+    margin-left: 25px;
+    width: 17%;
+    height: 60px;
+    background-color: aqua;
+    background-image: url(/imagenes/LOGO\ EMPRESA\ PEQU.png);
+}
+.logo{
+    width: 60px;
+    height: 60px;
+    margin-left: 35px;
+    background-image: url(../imagenes/business-color_money-coins_icon-icons.com_53446.png);
+}
+
+legend {
+
+    padding-top: 70px;
+    background-color: 0;
+    padding-left: 25px;
+    font-family: letras;
+    font-size: 20px;
+    font-weight: bold;
+    color: yellow;
+
+}
+
+body {
+    background-image: url(../imagenes/dollars-499481_1920.jpg);
+}
+
+.fieldset {
+    margin-top: 40px;
+    width: 40%;
+    height: 380px;
+    border: 0;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10%;
+    box-shadow: 2px 8px 10px rgb(2, 2, 52);
+    background: rgb(2, 0, 36);
+    background: linear-gradient(50deg, rgba(2, 0, 36, 1) 18%, rgba(16, 131, 224, 0.3329503676470589) 44%, rgba(7, 53, 150, 1) 77%, rgba(0, 212, 255, 1) 100%);
+}
+
+label {
+    margin-top: 2px;
+    display: block;
+    color: white;
+    font-size: 20px;
+    font-family: letras;
+    margin-left: 50px;
+}
+
+[type="number"] {
+    margin-top: 5px;
+    width: 70%;
+    display: block;
+}
+
+[type="text"] {
+    width: 70%;
+    margin-top: 5px;
+    display: block;
+}
+
+button {
+    margin-top: 15px;
+    width: 30%;
+    font-family: letras;
+    color: black;
+    border: 1px solid;
+    border-color: blue;
+    font-size: 15px;
+    float: right;
+    border-radius: 15%;
+    box-shadow: 2px 8px 10px rgb(1, 1, 0);
+
+
+}
+
+.frm {
+    background-color: 0;
+    width: 80%;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
