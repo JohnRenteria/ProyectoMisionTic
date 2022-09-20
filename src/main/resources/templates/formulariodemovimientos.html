@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/indexstyless.css">
+    <link rel="stylesheet" th:href="@{css/reset.css}">
+    <link rel="stylesheet" th:href="@{css/indexstyless.css}">
     <title>Movimiento de dinero</title>
 </head>
 
@@ -24,18 +25,18 @@
     <fieldset class="fieldset">
         <legend>Transacciones</legend>
 
-        <form action="" method="" class="frm">
+        <form th:action="@{MovimientoDeDinero}" th:object="${insertarMovimiento}" method="POST" class="frm">
             
             <label for="Monto">Monto
-                <input type="number" id="Monto">
+                <input type="number" id="Monto"th:field="*{monto}">
             </label>
 
             <label for="Concepto">Concepto
-                <input type="text" id="Concepto">
+                <input type="text" id="Concepto" th:field="*{concepto}">
             </label>
 
             <label for="fecha">Fecha
-                <input type="date" id="fecha">
+                <input type="date" id="fecha" th:field="*{fecha}">
             </label>
 
             <button>Registrar</button>

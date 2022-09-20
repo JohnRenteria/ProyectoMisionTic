@@ -3,22 +3,31 @@ package com.los_Turneados.Innova.Soft.controladores;
 import com.los_Turneados.Innova.Soft.modelos.MovimientoDinero;
 import com.los_Turneados.Innova.Soft.servicios.MovimientoDineroService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Map;
 
 
-@RequestMapping ("/MovimientoDinero")
-@RestController
+//@RequestMapping ("/MovimientoDinero")
+//@RestController
+@Controller
 public class ControladorMovimientoDInero {
 
     @Autowired
     private MovimientoDineroService transaccion;
 
-    @GetMapping
-    public List<MovimientoDinero> listar(){
-        return transaccion.listar();
+    @GetMapping ("Movimientos")
+    public String listar(Model model){
+        model.addAttribute("MovimientoDeDinero", transaccion.listar());return ("tablaMovimiento");
+    }
+
+    @GetMapping("Movimientos/nuevo")
+    public String formularioregistro(Model modelo){
+        modelo.addAttribute("insertarMovimiento", new MovimientoDinero());
+        return "formulariodemovimientos";
     }
 
     @GetMapping("/{id}")
