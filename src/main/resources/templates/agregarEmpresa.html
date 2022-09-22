@@ -4,9 +4,12 @@
   <title>Agregar nueva Empresa - Ciclo3</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/agregarEmpresas.css">
+  <link rel="shortcut icon" href="imagenes/icono.png" type="image/x-icon">
   <style>
     a{
     color:white;
@@ -19,8 +22,24 @@
 </head>
 <body>
 
+<div class="titulo">
+  <svg viewBox="0 0 2000 800">
+    <symbol id="s-text">
+      <text text-anchor="middle" x="50%" y="23%">Ingresar Datos</text>
+    </symbol>
+
+    <g class = "g-ants">
+      <use xlink:href="#s-text" class="text-copy"></use>
+      <use xlink:href="#s-text" class="text-copy"></use>
+      <use xlink:href="#s-text" class="text-copy"></use>
+      <use xlink:href="#s-text" class="text-copy"></use>
+      <use xlink:href="#s-text" class="text-copy"></use>
+    </g>
+  </svg>
+</div>
+
+
 <div class="container">
-  <h1> Agregue aqui los datos de Empresa</h1>
   <br>
   <!--Crear formulario para llenar los datos de la empresa y guardarlo en el objeto emp -->
   <form th:action="@{/GuardarEmpresa}" th:object="${emp}" method="post">
@@ -64,14 +83,14 @@
     <!--Boton para enviar todo y ejecutar accion -->
     <div class="row">
       <div class="col-md-2">
-        <button class="btn btn-success">Crear Empresa</button>
+        <button class="btn btn-success" id="button">Crear Empresa</button>
       </div>
     </div>
 
   </form>
 
   <br>
-  <a href="javascript: history.go(-1)" class="btn btn-info" role="button">Atrás</a>
+  <a href="javascript: history.go(-1)" class="btn btn-info" id="atras" role="button">Atrás</a>
 
 </div>
 </body>
