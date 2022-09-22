@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/tablaregistromovimientos.css">
+    <link rel="stylesheet" th:href="@{css/reset.css}">
+    <link rel="stylesheet" th:href="@{css/tablaregistromovimientos.css}">
     
-    <title>Registro de Movimientos</title>
+    <title>Tabla de Movimientos</title>
 </head>
 <body>
     <header class="contheader" id="contenca">
@@ -25,6 +25,7 @@
         <table>
             <thead>
                 <tr>
+                    <th>id_transaccion</th>
                     <th>Monto de dinero</th>
                     <th>Concepto</th>
                     <th>Fecha</th>
@@ -32,11 +33,16 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                <tr th:each="i:${MovimientoDeDinero}">
+
+                    <td th:text="${i.id_transaccion}"></td>
+                    <td th:text="${i.monto}"></td>
+                    <td th:text="${i.concepto}"></td>
+                    <td th:text="${i.fecha}"></td>
+                    <td th:text="${i.usuario}"></td>
+                    <td><a th:href="@{'Movimientos/actualizar'+'/'+${i.id_transaccion}}">Consultar</a></td>
+                    <td><a th:href="@{'Movimientos/eliminar'+'/'+${i.id_transaccion}}">Eliminar</a></td>
+
                 </tr>
 
                

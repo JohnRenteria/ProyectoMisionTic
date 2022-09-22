@@ -17,7 +17,7 @@
     display: flex;
     width: 30%;
     height: 80px;
-    margin-left: auto;       
+    margin-left: auto;
     align-items: center;
     float: right;
 }
@@ -62,9 +62,9 @@ body {
 }
 
 .fieldset {
-    margin-top: 40px;
+
     width: 40%;
-    height: 380px;
+    height: 440px;
     border: 0;
     margin-left: auto;
     margin-right: auto;
@@ -83,11 +83,7 @@ label {
     margin-left: 50px;
 }
 
-[type="number"] {
-    margin-top: 5px;
-    width: 70%;
-    display: block;
-}
+
 
 [type="text"] {
     width: 70%;
@@ -95,7 +91,13 @@ label {
     display: block;
 }
 
-button {
+[type="date"] {
+    width: 70%;
+    margin-top: 5px;
+    display: block;
+}
+
+.boton {
     margin-top: 15px;
     width: 30%;
     font-family: letras;
@@ -116,5 +118,5 @@ button {
     height: 150px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 10px;
+
 }

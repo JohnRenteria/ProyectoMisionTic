@@ -25,7 +25,7 @@ public class MovimientoDineroService {
         return movimientoDinero.save(movimiento);
     }
 
-    public MovimientoDinero consultarMovimientoPorId(Integer id_transaccion){
+    public MovimientoDinero consultarMovimientoPorId(String id_transaccion){
         return movimientoDinero.findById(id_transaccion).get();
     }
 
@@ -33,11 +33,11 @@ public class MovimientoDineroService {
         return movimientoDinero.save(movimiento);
     }
 
-    public void eliminarMovimientoporId(Integer id_transaccion){
+    public void eliminarMovimientoporId(String id_transaccion){
         movimientoDinero.deleteById(id_transaccion);
     }
 
-    public MovimientoDinero actualizarPorId(Integer id, Map<Object,Object> objectMap){
+    public MovimientoDinero actualizarPorId(String id, Map<Object,Object> objectMap){
         MovimientoDinero mov= movimientoDinero.findById(id).get();
         objectMap.forEach((key,value)-> {
             Field field = ReflectionUtils.findField(MovimientoDinero.class, (String) key);
