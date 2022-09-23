@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" th:href="@{css/reset.css}">
+    <link rel="stylesheet" th:href="@{css/StylesTRU.css}">
+    <title>Tabla de Registro</title>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr >
+                <th>Documento</th>
+                <th>Nombre</th>
+                <th>Correo</th>
+                <th>Empresa</th>
+                <th>Rol</th>
+            </tr>
+       </thead>
+       <tbody>
+            <tr th:each="i:${Empleado}">
+                <td th:text="${i.id_empleado}"></td>
+                <td th:text="${i.nombreEmpleado}"></td>
+                <td th:text="${i.empresa}"></td>
+                <td th:text="${i.correoEmpleado}"></td>
+                <td th:text="${i.rolEmpleado}"></td>
+                <td><a th:href="@{'/empleado/actualizar'+'/'+${i.id_empleado}}"> Editar</a></td>
+                <td><a th:href="@{'/empleado/eliminar'+'/'+${i.id_empleado}}"> Eliminar</a></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="botonregistro">
+        <a th:href="@{/empleado/nuevo}"><button class="nuevo2">Registrarse</button></a>
+    </div>
+    <div class="botonregistro">
+        <a th:href="@{/}"><button class="nuevo2">Volver a inicio</button></a>
+    </div>
+</body>
+</html>

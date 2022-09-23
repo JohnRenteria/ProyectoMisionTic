@@ -16,7 +16,7 @@
     display: flex;
     width: 35%;
     height: 80px;
-    margin-left: auto;       
+    margin-left: auto;
     align-items: center;
     float: right;
 }
@@ -32,10 +32,10 @@
 
 .logoempresa{
     margin-left: 25px;
-        width: 210px;
-        height: 60px;
-        background-color: aqua;
-        background-image: url(/imagenes/LOGO\ EMPRESA\ PEQU.png);
+    width: 17%;
+    height: 60px;
+    background-color: aqua;
+    background-image: url(/imagenes/LOGO\ EMPRESA\ PEQU.png);
 }
 
 .logo{
@@ -94,13 +94,14 @@ td{
 }
 
 .botonregistro{
-    background-color: green;
+    background-color:0;
 
     padding: auto;
 }
 .nuevo{
     margin-top: 15px;
     float: right;
+
     width: 20%;
     font-family: letras;
     color: black;
@@ -111,4 +112,22 @@ td{
     border-radius: 15%;
     box-shadow: 2px 8px 10px rgb(1, 1, 0);
 
+}
+
+.nuevo2{
+    margin-top: 15px;
+    margin-left: 55%;
+    width: 20%;
+    font-family: letras;
+    color: black;
+    border: 1px solid;
+    border-color: blue;
+    font-size: 15px;
+    margin-bottom: 10px;
+    border-radius: 15%;
+    box-shadow: 2px 8px 10px rgb(1, 1, 0);
+
+}
+a:link, a:visited, a:active {
+    text-decoration:none;
 }

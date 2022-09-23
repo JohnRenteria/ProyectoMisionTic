@@ -135,3 +135,6 @@ header .textos-header {
 .contenido-textos p {
     padding: 0px 0px 30px 15px;
 }
+a:link, a:visited, a:active {
+    text-decoration:none;
+}

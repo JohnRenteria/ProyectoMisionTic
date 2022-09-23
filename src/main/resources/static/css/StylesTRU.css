@@ -1,0 +1,59 @@
+body{
+    background-image: url('../imagenes/geometric-g6a780cc16_1920.jpg');
+    background-size: cover;
+}
+
+.logo{
+    background-image: url('../imagenes/WhatsApp\ Image\ 2022-09-23\ at\ 9.19.31\ AM.jpeg');
+    background-size: center;
+    width: 600px;
+    height: 150px;
+}
+
+table{
+    background-color: rgb(5, 37, 124);
+    margin-left: auto;
+    margin-right:auto;
+    margin-top: 80px;
+    width: 50%;
+    height: 180px;  
+}
+
+tr{
+    background-color: rgba(9, 47, 145, 0.884);
+    height: 30px;
+}
+ 
+td{
+    background-color: rgb(227, 240, 251);
+    color: rgb(1, 27, 1);
+    font-size:16px ;
+    padding: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+th{
+  color:rgb(255, 255, 255);
+  font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding:5px ;
+
+}
+
+.nuevo2{
+    margin-top: 15px;
+    margin-left: 55%;
+    width: 20%;
+    font-family: letras;
+    color: black;
+    border: 1px solid;
+    border-color: blue;
+    font-size: 15px;
+    margin-bottom: 10px;
+    border-radius: 15%;
+    box-shadow: 2px 8px 10px rgb(1, 1, 0);
+}
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+}

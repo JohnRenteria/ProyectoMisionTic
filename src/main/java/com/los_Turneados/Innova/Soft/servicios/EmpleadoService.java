@@ -1,6 +1,7 @@
 package com.los_Turneados.Innova.Soft.servicios;
 
 import com.los_Turneados.Innova.Soft.modelos.Empleado;
+import com.los_Turneados.Innova.Soft.modelos.Empresa;
 import com.los_Turneados.Innova.Soft.repositorios.EmpleadoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -24,15 +25,15 @@ public class EmpleadoService {
         return Empleado.save(empleado);
     }
 
-    public Empleado consultarEmpleadoPorID(Integer id_empleado){
+    public Empleado consultarEmpleadoPorID(String id_empleado){
         return Empleado.findById(id_empleado).get();
     }
 
-    public Empleado actualizarEmpleado(Empleado empleado){
+    public Empleado actualizarEmpleadoProrId(Empleado empleado){
         return Empleado.save(empleado);
     }
 
-    public Empleado actualizarPorId(Integer id, Map<Object,Object> objectMap){
+    public Empleado actualizarPorId(String id, Map<Object,Object> objectMap){
         Empleado mov= Empleado.findById(id).get();
         objectMap.forEach((key,value)-> {
             Field field = ReflectionUtils.findField(Empleado.class, (String) key);
@@ -42,8 +43,9 @@ public class EmpleadoService {
         return Empleado.save(mov);
     }
 
-    public void eliminarEmpleadoPorId(Integer id_empleado){
+    public void eliminarEmpleadoPorId(String id_empleado){
         Empleado.deleteById(id_empleado);
 
     }
 }
+

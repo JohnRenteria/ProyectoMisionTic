@@ -8,7 +8,7 @@ public class Empleado {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int id_empleado;
+    private String id_empleado;
     private String nombreEmpleado;
     private String correoEmpleado;
     @ManyToOne
@@ -26,11 +26,11 @@ public class Empleado {
     public Empleado() {
     }
 
-    public int getId_empleado() {
+    public String getId_empleado() {
         return id_empleado;
     }
 
-    public void setId_empleado(int id_empleado) {
+    public void setId_empleado(String id_empleado) {
         this.id_empleado = id_empleado;
     }
 
