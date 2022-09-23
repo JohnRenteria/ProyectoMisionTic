@@ -17,7 +17,12 @@ public class ControladorEmpresa {
     @Autowired
     EmpresaService empresaService;
 
-    @GetMapping ({"/","/VerEmpresas"})
+    @GetMapping ({"/"})
+    public String principal(){
+        return "index";
+    }
+
+    @GetMapping ({"/VerEmpresas"})
     public String viewEmpresas(Model model){
         List<Empresa> listaEmpresas=empresaService.getAllEmpresas();
         model.addAttribute("emplist",listaEmpresas);

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Innova-Soft</title>    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <a th:href="@{/VerEmpresas}">Empresas</a>
+                <a href="#">Empleados</a>
+                <a th:href="@{Movimientos}">Movimientos</a>
+                <a href="#">Cerrar Sesion</a>
+            </ul>
+        </nav>
+        <section class="textos-header">
+            <h1>INNOVA-SOFT</h1>
+            <h2>SOLUCIONES A TU ALCANCE</h2>
+        </section>
+        <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                style="height: 100%; width: 100%;">
+                <path d="M0.00,49.99 C174.04,245.23 349.20,-49.99 501.35,135.69 L500.00,150.00 L0.00,150.00 Z"
+                    style="stroke: none; fill: #fff;"></path>
+            </svg>/>
+        </div>
+    </header>
+    <main>
+        <section class="contenedor sobre-nosotros">
+            
+            <div class="contenedor-sobre-nosotros">
+<!--                <img src="img/Grupo de trabajo.png" alt="" class="imagen-about-us">-->
+                <div class="contenido-textos">
+                    <h3>Quienes somos</h3>
+                    <p>Somos una empresa dedicada a la ilustracion arquitectónica de las empresas que requieran de 
+                        nuestros servicios, resaltando el valor organizacional, humano y financiero de las compañias, generando soluciones 
+                        informáticas 
+                    </p>
+                    <h3>Nuestra misión</h3>
+                    <p>Con la ayuda de Innova-Soft y su gran equipo logramos que tu marca se posicione con soluciones digitales y tecnologia de vanguardia en todo el mundo </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>
