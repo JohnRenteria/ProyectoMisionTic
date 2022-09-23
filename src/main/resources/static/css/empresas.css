@@ -1,142 +1,155 @@
 @font-face {
-    font-family: 'Monoton';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Monoton'), local('Monoton-Regular'), url(http://themes.googleusercontent.com/static/fonts/monoton/v4/AKI-lyzyNHXByGHeOcds_w.woff) format('woff');
-  }
+  font-family: 'Monoton';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Monoton'), local('Monoton-Regular'), url(http://themes.googleusercontent.com/static/fonts/monoton/v4/AKI-lyzyNHXByGHeOcds_w.woff) format('woff');
+}
 
 .cabezote {
-    color: white;
-    font-weight: bold;
-    width: 100%;
-    height: 70px;
-    margin-top: 0px;
-    background: rgb(238,174,202);
-    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+  color: white;
+  font-weight: bold;
+  width: 100%;
+  height: 70px;
+  margin-top: 0px;
+  background: rgb(238,174,202);
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
 }
 
 
 
 /*neon effect*/
 p{
-    text-align:center;
-    font-size:40px;
-    margin:0px 0 0px 0;
-  }
+  text-align:center;
+  font-size:40px;
+  margin:0px 0 0px 0;
+}
 
-  a{
-    text-decoration:none;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    transition: all 0.5s;
-  }
+a{
+  text-decoration:none;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
 
-  p:nth-child(1) a{
-    color:#090909;
-    font-family:Monoton;
-  }
-  p:nth-child(1) a:hover{
-    -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
-    -moz-animation: neon1 1.5s ease-in-out infinite alternate;
-    animation: neon1 1.5s ease-in-out infinite alternate;
-  }
+p:nth-child(1) a{
+  color:#090909;
+  font-family:Monoton;
+}
+p:nth-child(1) a:hover{
+  -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+  animation: neon1 1.5s ease-in-out infinite alternate;
+}
 
-  p a:hover{
-  color:#080808;
-  }
+p a:hover{
+color:#080808;
+}
 
-  /*glow for webkit-ket-frames*/
-  @-webkit-keyframes neon1 {
-    from {
-      text-shadow: 0 0 10px #fff,
-                 0 0 20px  #fff,
-                 0 0 30px  #fff,
-                 0 0 40px  #11a4ff,
-                 0 0 70px  #11a4ff,
-                 0 0 80px  #11a4ff,
-                 0 0 100px #11a4ff,
-                 0 0 150px #11a4ff;
-    }
-    to {
-      text-shadow: 0 0 5px #fff,
-                 0 0 10px #fff,
-                 0 0 15px #fff,
-                 0 0 20px #11ff74,
-                 0 0 35px #11ff74,
-                 0 0 40px #11ff74,
-                 0 0 50px #11ff74,
-                 0 0 75px #11ff74;
-    }
+/*glow for webkit-ket-frames*/
+@-webkit-keyframes neon1 {
+  from {
+    text-shadow: 0 0 10px #fff,
+               0 0 20px  #fff,
+               0 0 30px  #fff,
+               0 0 40px  #11a4ff,
+               0 0 70px  #11a4ff,
+               0 0 80px  #11a4ff,
+               0 0 100px #11a4ff,
+               0 0 150px #11a4ff;
   }
+  to {
+    text-shadow: 0 0 5px #fff,
+               0 0 10px #fff,
+               0 0 15px #fff,
+               0 0 20px #11ff74,
+               0 0 35px #11ff74,
+               0 0 40px #11ff74,
+               0 0 50px #11ff74,
+               0 0 75px #11ff74;
+  }
+}
 
 
 
 body {
-    background-image: url(../imagenes/INICIO.jpg);
-    background-size: cover;
+  background-image: url(../imagenes/INICIO.jpg);
+  background-size: cover;
 }
 
 
 
 
 table {
-    padding-top: 2px;
-    margin-left: auto;
-    margin-right: auto;
-    color: rgb(240, 240, 255);
-    width: 90%;
-    height: 80%;
+  padding-top: 2px;
+  margin-left: auto;
+  margin-right: auto;
+  color: rgb(240, 240, 255);
+  width: 90%;
+  height: 80%;
 
 }
 
 tr {
-    height: 5px;
-    background: rgb(63,94,251);
-    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+  height: 5px;
+  background: rgb(63,94,251);
+  background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
 }
 
 th {
-    color: black;
-    font-size: 15px;
-    font-family: letras;
-    padding: 4px;
+  color: black;
+  font-size: 15px;
+  font-family: letras;
+  padding: 4px;
 
 
 }
 
 td {
-    background-color: rgb(250, 255, 255);
-    color: black;
-    font-size: 15px;
-    padding-left: 25px;
-    font-family: letras;
+  background-color: rgb(250, 255, 255);
+  color: black;
+  font-size: 15px;
+  padding-left: 25px;
+  font-family: letras;
 
 }
 
 #art1 {
-    background-color: orange;
-    width: 40%;
-    height: 25px;
-    margin-left: 25%;
-    border-radius: 10%;
+  background-color: orange;
+  width: 40%;
+  height: 25px;
+  margin-left: 25%;
+  border-radius: 10%;
 
 }
 
 #art2 {
-    background-color: red;
-    width: 40%;
-    height: 25px;
-    margin-left: 25%;
-    border-radius: 10%;
+  background-color: red;
+  width: 40%;
+  height: 25px;
+  margin-left: 25%;
+  border-radius: 10%;
 
 }
 
 #art3 {
-    background: rgb(16, 50, 224);
-    background: linear-gradient(50deg, rgba(16, 50, 224, 0.3329503676470589) 44%, rgba(14, 81, 223, 1) 76%, rgba(0, 212, 255, 1) 100%);
-    width: 15%;
-    height: 25px;
-    margin-top: 25px;
-    margin-left: 45%;
-    border-radius: 10%;
+  background: rgb(16, 50, 224);
+  background: linear-gradient(50deg, rgba(16, 50, 224, 0.3329503676470589) 44%, rgba(14, 81, 223, 1) 76%, rgba(0, 212, 255, 1) 100%);
+  width: 15%;
+  height: 25px;
+  margin-top: 25px;
+  margin-left: 45%;
+  border-radius: 10%;
+}
+
+.boton {
+  display: flex;
+  background: rgb(16, 50, 224);
+  background: linear-gradient(50deg, rgba(16, 50, 224, 0.3329503676470589) 44%, rgba(14, 81, 223, 1) 76%, rgba(0, 212, 255, 1) 100%);
+  width: 50px;
+  height: 25px;
+  margin-top: 15px;
+  margin-left: 50%;
+  border-radius: 10%;
+  font-weight: bold;
+  font-size: 20px;;
 }
