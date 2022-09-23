@@ -32,10 +32,10 @@
 
 .logoempresa{
     margin-left: 25px;
-    width: 17%;
-    height: 60px;
-    background-color: aqua;
-    background-image: url(/imagenes/LOGO\ EMPRESA\ PEQU.png);
+        width: 210px;
+        height: 60px;
+        background-color: aqua;
+        background-image: url(/imagenes/LOGO\ EMPRESA\ PEQU.png);
 }
 
 .logo{
