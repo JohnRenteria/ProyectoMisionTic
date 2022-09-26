@@ -4,8 +4,8 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=}, initial-scale=1.0">
-        <link rel="stylesheet" th:href="@{css/reset.css}">
-        <link rel="stylesheet" th:href="@{css/StylesRC.css}">
+        <link rel="stylesheet" th:href="@{/css/reset.css}">
+        <link rel="stylesheet" th:href="@{/css/StylesRC.css}">
         <title>Registro de Usuario</title>
     </head>
     <body>
@@ -19,7 +19,7 @@
                 <form th:action="@{/empleado/actualizar}" th:object="${empleadoactualizar}" method="POST" class="frm">
 
                     <label for="Documento">Documento
-                        <input type="text" id="Documento" required placeholder="N° Documento" th:field="*{id_documento}">
+                        <input type="text" id="Documento" required placeholder="N° Documento" th:field="*{id_empleado}">
                     </label>
                     <label for="Nombre">Nombre
                         <input type="text" id="Nombre" placeholder="Nombre & Apellido" th:field="*{nombreEmpleado}">
@@ -28,7 +28,7 @@
                         <input type="email" id="Correo" placeholder="example@gmail.com" th:field="*{correoEmpleado}">
                     </label>
                     <label for="Empresa">Empresa
-                        <input type="text" id="Empresa" placeholder="Postobón S.A.S" th:field="*{empresaEmpleado}">
+                        <input type="text" id="Empresa" placeholder="id de la empresa" th:field="*{empresa}">
                     </label>
                     <label for="Rol">Rol
                         <input type="text" id="Rol" placeholder="Administrador" th:field="*{rolEmpleado}">

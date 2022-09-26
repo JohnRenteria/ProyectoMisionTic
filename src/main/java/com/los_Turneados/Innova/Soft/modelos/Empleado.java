@@ -7,7 +7,6 @@ import javax.persistence.*;
 public class Empleado {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
     private String id_empleado;
     private String nombreEmpleado;
     private String correoEmpleado;
