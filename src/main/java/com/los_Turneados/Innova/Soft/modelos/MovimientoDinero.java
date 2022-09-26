@@ -20,14 +20,6 @@ public class MovimientoDinero {
     @JoinColumn(name = "id_empleado")
     private Empleado usuario;
 
-    public Empleado getUsuario() {
-        return usuario;
-    }
-
-    public void setUsuario(Empleado usuario) {
-        this.usuario = usuario;
-    }
-
     public MovimientoDinero() {
     }
 
@@ -69,4 +61,13 @@ public class MovimientoDinero {
     public void setFecha(LocalDate fecha) {
         this.fecha = fecha;
     }
+
+    public Empleado getUsuario() {
+        return usuario;
+    }
+
+    public void setUsuario(Empleado usuario) {
+        this.usuario = usuario;
+    }
+
 }

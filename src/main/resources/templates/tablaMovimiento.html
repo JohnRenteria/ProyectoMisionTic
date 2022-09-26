@@ -39,7 +39,7 @@
                     <td th:text="${i.monto}"></td>
                     <td th:text="${i.concepto}"></td>
                     <td th:text="${i.fecha}"></td>
-                    <td th:text="${i.usuario}"></td>
+                    <td th:text="${i.usuario.nombreEmpleado}"></td>
                     <td><a th:href="@{'Movimientos/actualizar'+'/'+${i.id_transaccion}}">Consultar</a></td>
                     <td><a th:href="@{'Movimientos/eliminar'+'/'+${i.id_transaccion}}">Eliminar</a></td>
 

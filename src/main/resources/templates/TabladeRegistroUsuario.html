@@ -24,7 +24,7 @@
                 <td th:text="${i.id_empleado}"></td>
                 <td th:text="${i.nombreEmpleado}"></td>
                 <td th:text="${i.correoEmpleado}"></td>
-                <td th:text="${i.empresa}"></td>
+                <td th:text="${i.empresa.nombre}"></td>
                 <td th:text="${i.rolEmpleado}"></td>
                 <td><a th:href="@{'/empleado/actualizar'+'/'+${i.id_empleado}}"> Editar</a></td>
                 <td><a th:href="@{'/empleado/eliminar'+'/'+${i.id_empleado}}"> Eliminar</a></td>
